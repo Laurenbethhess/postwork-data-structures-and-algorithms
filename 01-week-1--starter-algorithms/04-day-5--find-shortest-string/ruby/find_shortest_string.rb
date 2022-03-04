@@ -1,5 +1,14 @@
 def find_shortest_string(arr)
-  # type your code in here
+  shortest = arr[0]
+  start = Time.now
+  arr.each do |string|
+    string.length < shortest.length
+    shortest = string
+  end
+
+  average = Time.now - start / 2000
+
+
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -22,4 +31,7 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 # Please add your pseudocode to this file
+# start with index 0 and if the index is greater than index at 0, 
+# check the next index, if not, set variable to equal that index string
+
 # And a written explanation of your solution
